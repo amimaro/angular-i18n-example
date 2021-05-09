@@ -16,6 +16,22 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en-US",
+          "baseHref": "en"
+        },
+        "locales": {
+          "pt": {
+            "translation": "src/locale/messages.pt-BR.xlf",
+            "baseHref": "pt"
+          },
+          "pt-PT": {
+            "translation": "src/locale/messages.pt-PT.xlf",
+            "baseHref": "pt-PT"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -33,7 +49,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nMissingTranslation": "error",
+            "localize": true
           },
           "configurations": {
             "production": {
@@ -62,6 +80,21 @@
                   "maximumError": "4kb"
                 }
               ]
+            },
+            "en-US": {
+              "localize": [
+                "en-US"
+              ]
+            },
+            "pt": {
+              "localize": [
+                "pt"
+              ]
+            },
+            "pt-PT": {
+              "localize": [
+                "pt-PT"
+              ]
             }
           }
         },
@@ -73,6 +106,15 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-i18n-example:build:production"
+            },
+            "en-US": {
+              "browserTarget": "angular-i18n-example:build:en-US"
+            },
+            "pt": {
+              "browserTarget": "angular-i18n-example:build:pt"
+            },
+            "pt-PT": {
+              "browserTarget": "angular-i18n-example:build:pt-PT"
             }
           }
         },
