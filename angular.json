@@ -19,16 +19,16 @@
       "i18n": {
         "sourceLocale": {
           "code": "en",
-          "baseHref": "en"
+          "baseHref": "/en/"
         },
         "locales": {
           "pt": {
             "translation": "src/locale/messages.pt-BR.xlf",
-            "baseHref": "pt"
+            "baseHref": "/pt/"
           },
           "pt-PT": {
             "translation": "src/locale/messages.pt-PT.xlf",
-            "baseHref": "pt-PT"
+            "baseHref": "/pt-PT/"
           }
         }
       },
