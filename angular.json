@@ -18,7 +18,7 @@
       "prefix": "app",
       "i18n": {
         "sourceLocale": {
-          "code": "en-US",
+          "code": "en",
           "baseHref": "en"
         },
         "locales": {
@@ -81,9 +81,9 @@
                 }
               ]
             },
-            "en-US": {
+            "en": {
               "localize": [
-                "en-US"
+                "en"
               ]
             },
             "pt": {
@@ -107,8 +107,8 @@
             "production": {
               "browserTarget": "angular-i18n-example:build:production"
             },
-            "en-US": {
-              "browserTarget": "angular-i18n-example:build:en-US"
+            "en": {
+              "browserTarget": "angular-i18n-example:build:en"
             },
             "pt": {
               "browserTarget": "angular-i18n-example:build:pt"
